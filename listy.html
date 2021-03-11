@@ -40,7 +40,8 @@
     <script>
         function makeNewDiv(){
 		
-
+          var min=0;
+        var max=listyItems.length;
         var listyItems=document.getElementsByClassName("listy")
         
 		let element = document.createElement("div")
@@ -62,7 +63,12 @@
                   }
 
               }
+              if(flag == 0){
+                var rand=Math.floor(Math.random()*(max-min)+min)
               
+                      listyItems[rand].remove();
+                      console.log("We get rid of the first item.")
+                  }
                   
         }
         

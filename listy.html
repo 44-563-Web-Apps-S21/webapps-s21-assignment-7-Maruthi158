@@ -42,8 +42,7 @@
 		
 
         var listyItems=document.getElementsByClassName("listy")
-        var min=0;
-        var max=listyItems.length;
+        
 		let element = document.createElement("div")
         element.setAttribute("class","listy")
 		element.innerHTML = document.getElementById("first_input").value;
@@ -63,12 +62,7 @@
                   }
 
               }
-              if(flag == 0){
-                var rand=Math.floor(Math.random()*(max-min)+min)
               
-                      listyItems[rand].remove();
-                      console.log("We get rid of the first item.")
-                  }
                   
         }
         

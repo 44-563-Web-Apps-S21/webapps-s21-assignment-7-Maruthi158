@@ -27,6 +27,8 @@
   var myTime=undefined;
   var minimum=2;
     var maximum=10;
+
+  
     function recordReact() {
         myTime=Date.now();
         console.log(myTime);
@@ -34,7 +36,7 @@
       
     }
     function startTime() {
-        var rand=Math.floor(Math.random()*(maximum-minimum)+minimum)
+      var rand=Math.floor(Math.random()*(maximum-minimum)+minimum)
         for(let i=0;i<rand+1;i++){
             var j=(rand-i)*1000;
             var p=i;
@@ -51,8 +53,8 @@
               document.getElementById("target").innerHTML = "Time was "+diff+" ms"
               myTime=undefined
           }
-      }, rand*1000)
-    }
+      }
+    }, rand*1000)
   </script>
   
 
